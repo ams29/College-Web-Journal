@@ -1,0 +1,49 @@
+<html>
+   <head>
+      <script src = "backEnd.js"></script> 
+      <title>Create New Account - Student Web Journal</title>
+      <style>
+         body {
+         background: Coral;
+         }
+         h1 {
+         width: 70%;
+         text-align: center;
+         margin: auto;
+         }
+         h3 {
+         width: 100%;
+         text-align: center;
+         margin: auto;
+         }
+         button {
+         width: 70%;
+         text-align: center;
+         margin: auto;
+         }
+         input {
+         width: 70%;
+         text-align: center;
+         margin: auto;
+         }
+         div {
+         width: 40%;
+         margin: auto; 
+         background-color: #EDF3A9;
+         }
+      </style>
+      <br><br><br><br><br>
+      <br><br><br><br><br>
+      <head>
+      <body onload = "setup()">
+      <h1>Student Web Journal</h1>
+      <h1>Create New Account</h1>
+      <div>
+         <center><h3> Username: </h3>
+         <input type = "text" id = "username" placeholder = "Username">
+         <h3> Password: </h3>
+         <input type = "text" id = "password" placeholder = "Password">
+         <button onclick = "addCombo(document.getElementById('username').value, document.getElementById('password').value)"> Create New Account </button></center>
+      </div>
+      </body>
+</html>

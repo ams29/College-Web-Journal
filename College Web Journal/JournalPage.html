@@ -1,0 +1,69 @@
+<html>
+   <head>
+      <script src = "backEnd.js"></script> 
+      <title> Student Web Journal </title>
+      <style>
+         body {
+         background: Coral;
+         }
+         h1 {
+         width: 70%;
+         text-align: center;
+         margin: auto;
+         }
+         }
+         h3 {
+         width: 100%;
+         text-align: center;
+         margin: auto;
+         }
+         button {
+         width: 70%;
+         text-align: center;
+         margin: auto;
+         }
+         input {
+         width: 70%;
+         text-align: center;
+         margin: auto;
+         }
+         .mainDiv {
+         width: 40%;
+         margin: auto; 
+         background-color: #EDF3A9;
+         }
+
+         .extraDiv {
+         width: 50%;
+         margin: auto; 
+         background-color: #EDF3A9;     
+         }
+      </style>
+      <br><br><br><br><br>
+      <br><br><br><br><br>
+      <head>
+      <body>
+      <h1> Student Web Journal </h1>
+      <div class = "mainDiv">
+         <center><h3> Search For Journal Title: </h3>
+         <input type = "text" id = "title" placeholder = "Title">
+         <button onclick="searchStory(document.getElementById('title').value)">Search</button>
+         <button onclick="deleteStory(document.getElementById('title').value)">Delete </button></center>
+      </div>
+      </textarea><br><br><br><br><br>
+      <div class = "extraDiv">
+         <center><h1>
+         Add New Journal:
+         </h1>
+         <textarea placeholder = "Add New Journal Entry Here" id = "addNewStory"></textarea><br><br>
+         <button onclick = "addStory(document.getElementById('title').value, document.getElementById('addNewStory').value)">Add New Story</button></center>
+      </div>
+      <br><br><br><br><br>
+
+      <div>
+      <center>
+      <input type = "file" onchange = "readFile(this)">
+      <button onClick = "createFile()"> Download Story File </button></center>
+      </div>
+      </body>
+</html>

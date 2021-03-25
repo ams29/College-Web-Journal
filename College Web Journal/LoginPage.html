@@ -1,0 +1,61 @@
+<html>
+   <head>
+      <script src = "backEnd.js"></script> 
+      <title> LogIn - Student Web Journal </title>
+      <style>
+         body {
+         background: Coral;
+         }
+         h1 {
+         width: 70%;
+         text-align: center;
+         margin: auto;
+         }
+         }
+         h3 {
+         width: 100%;
+         text-align: center;
+         margin: auto;
+         }
+         button {
+         width: 70%;
+         text-align: center;
+         margin: auto;
+         }
+         input {
+         width: 70%;
+         text-align: center;
+         margin: auto;
+         }
+         div {
+         width: 40%;
+         margin: auto; 
+         background-color: #EDF3A9;
+         }
+      </style>
+<br><br><br><br><br>
+<br><br><br><br><br>
+
+      <head>
+      <body onload = "setup()">
+      <h1> Student Web Journal </h1>
+      <h1> Log In </h1>
+      <div>
+         <center><h3> Username: </h3>
+         <input type = "text" id = "username" placeholder = "Username">
+         <h3> Password: </h3>
+         <input type = "text" id = "password" placeholder = "Password">
+         <button onclick = "checkCombo(document.getElementById('username').value, document.getElementById('password').value)"> Log In </button>
+         <button onclick = "parent.location='CreateNewAccount.html'"> Create New Account </button>
+	 <input type="file" onchange="readFile(this)">
+	 <button onClick = "createFile()"> Download Login File </button></center>
+	      
+      <h1> How To Use? </h1>
+      <h1> 1) Create Account! </h1>
+      <h1> 2) LogIn to your account </h1>
+      <h1> 3) Add, search, or delete journal entries on the Journal Page. </h1>
+      <h1> 4) Start Writing Already! </h1>
+
+      </div>
+      </body>
+</html>
